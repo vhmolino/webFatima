@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video de Fondo</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            position: relative;
+        }
+
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            left: 0;
+        }
+
+        .content {
+            z-index: 1;
+            color: #fff;
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+        }
+
+        .content1:hover {
+            background-color: rgba(0, 0, 0, 0.14);
+        }
+
+        .content2 {
+            top: calc(50% + 50px); /* Agregamos un desplazamiento para separar los elementos */
+        }
+
+        .content2:hover {
+            background-color: rgba(0, 0, 0, 0.14);
+        }
+
+        /* Estilo para los enlaces */
+        .content a {
+            text-decoration: none;
+            color: inherit;
+        }
+    </style>
+</head>
+<body>
+
+    <video autoplay loop muted>
+        <source src="/videos/production_id_3825391 (2160p).mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+    <div class="content content1">
+        <a href="entrenamiento.html">
+            <h2>ENTRENAMIENTO</h2>
+        </a>
+    </div>
+    <div class="content content2">
+        <a href="dieta.html">
+            <h2>DIETA</h2>
+        </a>
+    </div>
+
+</body>
+</html>
